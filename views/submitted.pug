@@ -1,0 +1,36 @@
+include includes/header.pug
+
+        main(class="w-100 cf helvetica dark-gray bg-white pa3 pa4-m pa5-l mw9 center")
+            h1= message
+                span(class="green")=title
+            div
+                h2= sdata.title
+
+                h3= sdata.desc
+                article(class="mw7 center bg-moon-gray br3 pa3 pa4-ns mv3 ba b--black-10")
+                    div(class="tc")
+                        img(src= sdata.avatar class="br-100 h8 w8 dib ba b--black-05 pa2" title=sdata.title)
+                        h1(class="f3 mb2")=sdata.title
+                        if sitdId
+                            h2(class="f5 fw4 green mt0") Yep After Looking its definitely Wordpress
+                            div(class="pa4 tc")
+                                img(src="https://s.w.org/about/images/logos/wordpress-logo-simplified-rgb.png" class="h3 w3 dib" alt="avatar")
+                        else
+                            h2(class="f5 fw4 red mt0") We found no code smells of wordpress
+
+
+            pre
+                code(style="height: 400px")= sdata.head
+
+            a(href="/" class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box mr4")
+                span(class="pl1") Check Another Site
+
+
+
+
+
+
+
+
+
+
