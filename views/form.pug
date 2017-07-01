@@ -1,5 +1,12 @@
 include includes/header.pug
 div(class="pa4-l")
+    if validation
+        div(class="flex items-center justify-center pa4 bg-light-red white")
+            svg(class="w1" data-icon="info" viewBox="0 0 32 32" style="fill:currentcolor")
+                title icon
+                path(d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6")
+            span(class="lh-title ml3")=validation
+
     form(class="bg-light-green mw7 center pa4 br2-ns ba b--black-10" action="/submission" name="testform", method="post")
         fieldset(class="cf bn ma0 pa0")
         legend(class="pa0 f5 f4-ns mb3 black-80") Enter a Website URL to determine if its Wordpress
@@ -7,6 +14,7 @@ div(class="pa4-l")
             label(class="clip" for="url") URL
             input(class="f6 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns" placeholder="ex: http://wordpress.com" type="text" name="url" value="" id="url")
             input(class="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-black-70 hover-bg-black white pointer w-100 w-25-m w-20-l br2-ns br--right-ns" type="submit" value="Submit")
+
 
 
 
