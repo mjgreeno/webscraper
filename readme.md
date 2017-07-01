@@ -17,5 +17,13 @@ things hackers will look for when trying to hack or exploit or even scrape a sit
 
  --run npm install
  
- ##
+ ## Test Cases
+ 
+ <p> essentially any worpress and non worpdress site. </p>
+ <h3>Wordpress Sites</h3>
+ <ul>
+    <li>http://www.starwars.com/news</li>
+    <li>http://chicago.suntimes.com/</li>
+    <li>http://www.bbcamerica.com/</li>
+ </ul>
 
